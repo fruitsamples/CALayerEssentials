@@ -51,7 +51,8 @@
 
 static CGFloat randomFloat()
 {
-	return random() / (double)LONG_MAX;
+    CGFloat f = (rand() % RAND_MAX) / (float)(RAND_MAX);
+    return f;
 }
 
 static CGPoint randomPointInBounds(CGRect bounds)
